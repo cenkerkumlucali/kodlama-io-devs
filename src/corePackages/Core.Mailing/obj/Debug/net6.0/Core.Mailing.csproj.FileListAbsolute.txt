@@ -1,0 +1,12 @@
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/bin/Debug/net6.0/Core.Mailing.deps.json
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/bin/Debug/net6.0/Core.Mailing.dll
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/bin/Debug/net6.0/Core.Mailing.pdb
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/Core.Mailing.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/Core.Mailing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/Core.Mailing.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/Core.Mailing.AssemblyInfo.cs
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/Core.Mailing.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/Core.Mailing.dll
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/refint/Core.Mailing.dll
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/Core.Mailing.pdb
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.Mailing/obj/Debug/net6.0/ref/Core.Mailing.dll

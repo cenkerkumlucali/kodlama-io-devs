@@ -1,0 +1,12 @@
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/bin/Debug/net6.0/Core.ElasticSearch.deps.json
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/bin/Debug/net6.0/Core.ElasticSearch.dll
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/bin/Debug/net6.0/Core.ElasticSearch.pdb
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/Core.ElasticSearch.csproj.AssemblyReference.cache
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/Core.ElasticSearch.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/Core.ElasticSearch.AssemblyInfoInputs.cache
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/Core.ElasticSearch.AssemblyInfo.cs
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/Core.ElasticSearch.csproj.CoreCompileInputs.cache
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/Core.ElasticSearch.dll
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/refint/Core.ElasticSearch.dll
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/Core.ElasticSearch.pdb
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/corePackages/Core.ElasticSearch/obj/Debug/net6.0/ref/Core.ElasticSearch.dll

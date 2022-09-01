@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "XbGJbAcoZQW0K23kiW7wXn28P4JWdT2XXKs5zqbRyx0kCYxQ7BuYRCKrGbNhWR9tz8UlULN4amqNoI+5JwgS2Q==",
+  "success": true,
+  "projectFilePath": "/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/kodlamaioDevs/Infrastructure/Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "/Users/cenkerkumlucali/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
