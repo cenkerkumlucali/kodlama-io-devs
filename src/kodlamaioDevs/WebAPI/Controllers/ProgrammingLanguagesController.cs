@@ -32,7 +32,7 @@ namespace WebAPI.Controllers
         }
         
         [HttpPost("delete/{Id}")]
-        public async Task<IActionResult> Update(
+        public async Task<IActionResult> Delete(
             [FromRoute] DeleteProgrammingLanguageCommand deleteProgrammingLanguageCommand)
         {
             DeletedProgrammingLanguageDto result = await Mediator.Send(deleteProgrammingLanguageCommand);
