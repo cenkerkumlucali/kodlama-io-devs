@@ -76,7 +76,7 @@ namespace Persistence.Contexts
                 a.Property(p => p.UserId).HasColumnName("UserId");
                 a.Property(p => p.OperationClaimId).HasColumnName("OperationClaimdId");
                 a.HasOne(p => p.User);
-                a.HasOne(p => p.OperationClaim);
+                a.HasMany(p => p.OperationClaim);
 
             });
 

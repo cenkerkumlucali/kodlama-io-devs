@@ -41,13 +41,7 @@ namespace WebAPI.Controllers
             {
                 return BadRequest("error");
             }
-
-            var claims = await Mediator.Send(new GetUserOperationClaimByUserQuery() { UserId = result.UserId });
-            var user = await Mediator.Send(new GetUserByEmailQuery() { Email = result?.Email });
-            
-            var token = _tokenHelper.CreateToken(user,claims.Items);
-            
-            return Created("", token);
+            return Created("", result.Token);
         }
     }
 }
@@ -67,7 +61,7 @@ namespace WebAPI.Controllers
 
 /*{
     "userForLoginDto": {
-        "email": "cenker@cenker.com",
+        "email": "cenker1@cenker.com",
         "password": "cenker123"
     }
 }*/
