@@ -288,3 +288,4 @@
 /Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/kodlamaioDevs/WebAPI/obj/Debug/net6.0/WebAPI.csproj.CopyComplete
 /Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/kodlamaioDevs/WebAPI/bin/Debug/net6.0/Infrastructure.dll
 /Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/kodlamaioDevs/WebAPI/bin/Debug/net6.0/Infrastructure.pdb
+/Users/cenkerkumlucali/RiderProjects/Kodlama.io.Devs/src/kodlamaioDevs/WebAPI/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

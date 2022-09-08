@@ -7,7 +7,31 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Features\programmingLanguage\Constants" />
+        <Folder Include="Features\Auths\Constanst" />
+        <Folder Include="Features\Auths\Models" />
+        <Folder Include="Features\Auths\Queries" />
+        <Folder Include="Features\Auths\Rules" />
+        <Folder Include="Features\OperationClaims\Commands\DeleteOperationClaim" />
+        <Folder Include="Features\OperationClaims\Commands\UpdateUserOperationClaim" />
+        <Folder Include="Features\OperationClaims\Constanst" />
+        <Folder Include="Features\OperationClaims\Queries" />
+        <Folder Include="Features\OperationClaims\Rules" />
+        <Folder Include="Features\ProgrammingLanguage\Constants" />
+        <Folder Include="Features\Technology\Constants" />
+        <Folder Include="Features\Technology\Rules" />
+        <Folder Include="Features\UserGithub\Constants" />
+        <Folder Include="Features\UserGithub\Models" />
+        <Folder Include="Features\UserGithub\Queries" />
+        <Folder Include="Features\UserGithub\Rules" />
+        <Folder Include="Features\UserOperationClaims\Commands\DeleteUserOperationClaim" />
+        <Folder Include="Features\UserOperationClaims\Commands\UpdateUserOperationClaim" />
+        <Folder Include="Features\UserOperationClaims\Constanst" />
+        <Folder Include="Features\UserOperationClaims\Rules" />
+        <Folder Include="Features\Users\Commands" />
+        <Folder Include="Features\Users\Constanst" />
+        <Folder Include="Features\Users\Models" />
+        <Folder Include="Features\Users\Profiles" />
+        <Folder Include="Features\Users\Rules" />
     </ItemGroup>
 
     <ItemGroup>
