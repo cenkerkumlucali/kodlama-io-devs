@@ -23,7 +23,9 @@ public class LoginCommand : IRequest<LoginedDto>
         private readonly IMapper _mapper;
 
 
-        public LoginCommandHandler(IUserRepository userRepository, IMapper mapper, IUserOperationClaimRepository userOperationClaimRepository, ITokenHelper tokenHelper, IOperationClaimRepository operationClaimRepository)
+        public LoginCommandHandler(IUserRepository userRepository, IMapper mapper,
+            IUserOperationClaimRepository userOperationClaimRepository, ITokenHelper tokenHelper,
+            IOperationClaimRepository operationClaimRepository)
         {
             _userRepository = userRepository;
             _mapper = mapper;
@@ -34,13 +36,18 @@ public class LoginCommand : IRequest<LoginedDto>
 
         public async Task<LoginedDto> Handle(LoginCommand request, CancellationToken cancellationToken)
         {
-            Core.Security.Entities.User? user =  await _userRepository.GetAsync(user => user.Email == request.UserForLoginDto.Email);
-            if (!HashingHelper.VerifyPasswordHash(request.UserForLoginDto.Password, user.PasswordHash, user.PasswordSalt))
-            { }
-            var userClaim = await _userOperationClaimRepository.GetAsync(c=>c.UserId == user.Id);
+            Core.Security.Entities.User? user =
+                await _userRepository.GetAsync(user => user.Email == request.UserForLoginDto.Email);
+            if (!HashingHelper.VerifyPasswordHash(request.UserForLoginDto.Password, user.PasswordHash,
+                    user.PasswordSalt))
+            {
+                return new LoginedDto();
+            }
+
+            var userClaim = await _userOperationClaimRepository.GetAsync(c => c.UserId == user.Id);
             var claims = await _operationClaimRepository.GetListAsync(c => c.Id == userClaim.OperationClaimId);
             LoginedDto loginDto = _mapper.Map<LoginedDto>(user);
-            loginDto.Token = _tokenHelper.CreateToken(user,claims.Items).Token;
+            loginDto.Token = _tokenHelper.CreateToken(user, claims.Items).Token;
 
             return loginDto;
         }
