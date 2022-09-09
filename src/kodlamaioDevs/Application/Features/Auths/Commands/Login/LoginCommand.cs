@@ -47,7 +47,7 @@ public class LoginCommand : IRequest<LoginedDto>
             var userClaim = await _userOperationClaimRepository.GetAsync(c => c.UserId == user.Id);
             var claims = await _operationClaimRepository.GetListAsync(c => c.Id == userClaim.OperationClaimId);
             LoginedDto loginDto = _mapper.Map<LoginedDto>(user);
-            loginDto.Token = _tokenHelper.CreateToken(user, claims.Items).Token;
+            loginDto.AccessToken = _tokenHelper.CreateToken(user, claims.Items);
 
             return loginDto;
         }

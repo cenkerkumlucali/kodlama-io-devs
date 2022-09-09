@@ -41,7 +41,7 @@ namespace WebAPI.Controllers
             {
                 return BadRequest("error");
             }
-            return Created("", result.Token);
+            return Created("", result);
         }
     }
 }
