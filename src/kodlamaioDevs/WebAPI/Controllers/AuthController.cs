@@ -19,13 +19,7 @@ namespace WebAPI.Controllers
     [ApiController]
     public class AuthController : BaseController
     {
-        ITokenHelper _tokenHelper;
-
-        public AuthController(ITokenHelper tokenHelper)
-        {
-            _tokenHelper = tokenHelper;
-        }
-
+        
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterCommand registerCommand)
         {
