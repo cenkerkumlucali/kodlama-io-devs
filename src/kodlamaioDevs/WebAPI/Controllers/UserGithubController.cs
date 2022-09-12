@@ -15,7 +15,7 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserGithubsController : BaseController
+    public class SocialPlatformsController : BaseController
     {
         [HttpPost]
         public async Task<IActionResult> Add(
@@ -33,7 +33,7 @@ namespace WebAPI.Controllers
             return Created("", result);
         }
         
-        [HttpPost("delete/{Id}")]
+        [HttpDelete("{Id}")]
         public async Task<IActionResult> Delete(
             [FromRoute] DeleteSocialPlatformCommand deleteUserGithubCommand)
         {

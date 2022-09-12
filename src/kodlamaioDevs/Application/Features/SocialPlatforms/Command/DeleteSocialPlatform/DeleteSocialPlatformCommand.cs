@@ -10,13 +10,13 @@ public class DeleteSocialPlatformCommand:IRequest<DeletedSocialPlatformDto>
 {
     public int Id { get; set; }
     
-    public class DeleteUserGithubCommandHandler:IRequestHandler<DeleteSocialPlatformCommand,DeletedSocialPlatformDto>
+    public class DeleteSocialPlatformCommandHandler:IRequestHandler<DeleteSocialPlatformCommand,DeletedSocialPlatformDto>
     {
         private ISocialPlatformRepository _userGithubRepository;
         private IMapper _mapper;
 
 
-        public DeleteUserGithubCommandHandler(ISocialPlatformRepository userGithubRepository, IMapper mapper)
+        public DeleteSocialPlatformCommandHandler(ISocialPlatformRepository userGithubRepository, IMapper mapper)
         {
             _userGithubRepository = userGithubRepository;
             _mapper = mapper;

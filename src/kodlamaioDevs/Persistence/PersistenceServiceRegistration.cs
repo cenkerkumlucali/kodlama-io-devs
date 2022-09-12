@@ -19,7 +19,7 @@ namespace Persistence
         {
             services.AddDbContext<BaseDbContext>(options =>
                                                      options.UseSqlServer(
-                                                         configuration.GetConnectionString("ProgrammingLanguageConnectionString")));
+                                                         configuration.GetConnectionString("KodlamaioDevsConnectionString")));
             
             services.AddScoped<IProgrammingLanguageRepository, ProgrammingLanguageRepository>();
             services.AddScoped<ITechnologyRepository, TechnologyRepository>();

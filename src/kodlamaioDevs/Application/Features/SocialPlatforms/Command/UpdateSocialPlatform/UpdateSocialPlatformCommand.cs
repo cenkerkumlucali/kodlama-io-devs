@@ -12,13 +12,13 @@ public class UpdateSocialPlatformCommand:IRequest<UpdatedSocialPlatformDto>
     public int LanguageId { get; set; }
     public string Name { get; set; }
     
-    public class UpdateUserGithubCommandHandler:IRequestHandler<UpdateSocialPlatformCommand,UpdatedSocialPlatformDto>
+    public class UpdateSocialPlatformCommandHandler:IRequestHandler<UpdateSocialPlatformCommand,UpdatedSocialPlatformDto>
     {
         private ISocialPlatformRepository _userGithubRepository;
         private IMapper _mapper;
 
 
-        public UpdateUserGithubCommandHandler(ISocialPlatformRepository userGithubRepository, IMapper mapper)
+        public UpdateSocialPlatformCommandHandler(ISocialPlatformRepository userGithubRepository, IMapper mapper)
         {
             _userGithubRepository = userGithubRepository;
             _mapper = mapper;

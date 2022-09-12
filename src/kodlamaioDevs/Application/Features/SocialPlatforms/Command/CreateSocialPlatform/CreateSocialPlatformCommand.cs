@@ -11,14 +11,14 @@ public class CreateSocialPlatformCommand: IRequest<CreatedSocialPlatformDto>
     public int UserId { get; set; }
     public string Name { get; set; }
 
-    public class CreateTechnologyCommandHandler : IRequestHandler<CreateSocialPlatformCommand,
+    public class CreateSocialPlatformCommandHandler : IRequestHandler<CreateSocialPlatformCommand,
         CreatedSocialPlatformDto>
     {
         private ISocialPlatformRepository _userGithubRepository;
         private IMapper _mapper;
 
 
-        public CreateTechnologyCommandHandler(ISocialPlatformRepository userGithubRepository, IMapper mapper)
+        public CreateSocialPlatformCommandHandler(ISocialPlatformRepository userGithubRepository, IMapper mapper)
         {
             _userGithubRepository = userGithubRepository;
             _mapper = mapper;
