@@ -1,4 +1,4 @@
-namespace Application.Features.UserGithub.Dtos;
+namespace Application.Features.SocialPlatforms.Dtos;
 
 public class DeletedSocialPlatformDto
 {

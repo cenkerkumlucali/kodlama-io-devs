@@ -1,7 +1,6 @@
-using Application.Features.programmingLanguage.Commands.UpdateProgrammingLanguage;
 using FluentValidation;
 
-namespace Application.Features.programmingLanguage.Commands.CreateProgrammingLanguage;
+namespace Application.Features.ProgrammingLanguage.Commands.UpdateProgrammingLanguage;
 
 public class UpdateProgrammingLanguageCommandValidator:AbstractValidator<UpdateProgrammingLanguageCommand>
 {

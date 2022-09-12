@@ -2,12 +2,11 @@ using Application.Features.Auths.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Security.Dtos;
-using Core.Security.Entities;
 using Core.Security.Enums;
 using Core.Security.Hashing;
 using MediatR;
 
-namespace Application.Features.Auth.Commands;
+namespace Application.Features.Auths.Commands.Register;
 
 public class RegisterCommand : IRequest<RegisteredDto>
 {

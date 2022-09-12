@@ -1,11 +1,10 @@
-using Application.Features.programmingLanguage.Dtos;
-using Application.Features.programmingLanguage.Rules;
+using Application.Features.ProgrammingLanguage.Dtos;
+using Application.Features.ProgrammingLanguage.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
-using Domain.Entities;
 using MediatR;
 
-namespace Application.Features.programmingLanguage.Queries.GetByIdProgrammingLanguage;
+namespace Application.Features.ProgrammingLanguage.Queries.GetByIdProgrammingLanguage;
 
 public class GetByIdProgrammingLanguageQuery:IRequest<GetByIdProgrammingLanguageDto>
 {
@@ -27,7 +26,7 @@ public class GetByIdProgrammingLanguageQuery:IRequest<GetByIdProgrammingLanguage
         public async Task<GetByIdProgrammingLanguageDto> Handle(GetByIdProgrammingLanguageQuery request, CancellationToken cancellationToken)
         {
             
-            ProgrammingLanguage? programmingLanguage =
+            Domain.Entities.ProgrammingLanguage? programmingLanguage =
                 await _programmingLanguageRepository.GetAsync(c => c.Id == request.Id);
             await _programmingLanguageBusinessRules.LanguageShouldExistWhenRequested(programmingLanguage);
             GetByIdProgrammingLanguageDto getByIdProgrammingLanguageDto =

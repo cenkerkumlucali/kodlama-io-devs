@@ -1,6 +1,4 @@
-﻿using Application.Features.programmingLanguage.Dtos;
-using Application.Features.programmingLanguage.Models;
-using Application.Features.Technology.Commands.CreateTechnology;
+﻿using Application.Features.Technology.Commands.CreateTechnology;
 using Application.Features.Technology.Commands.DeleteTechnology;
 using Application.Features.Technology.Commands.UpdateTechnology;
 using Application.Features.Technology.Dtos;

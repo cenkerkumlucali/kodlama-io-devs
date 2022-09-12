@@ -1,11 +1,10 @@
-using Application.Features.programmingLanguage.Dtos;
-using Application.Features.programmingLanguage.Rules;
+using Application.Features.ProgrammingLanguage.Dtos;
+using Application.Features.ProgrammingLanguage.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
-using Domain.Entities;
 using MediatR;
 
-namespace Application.Features.programmingLanguage.Commands.CreateProgrammingLanguage;
+namespace Application.Features.ProgrammingLanguage.Commands.CreateProgrammingLanguage;
 
 public class CreateProgrammingLanguageCommand : IRequest<CreatedProgrammingLanguageDto>
 {
@@ -30,8 +29,8 @@ public class CreateProgrammingLanguageCommand : IRequest<CreatedProgrammingLangu
             CancellationToken cancellationToken)
         {
             await _programmingLanguageBusinessRules.LanguageNameCanNotBeDuplicatedWhenInserted(request.Name);
-            ProgrammingLanguage programmingLanguage = _mapper.Map<ProgrammingLanguage>(request);
-            ProgrammingLanguage createdProgrammingLanguage =
+            Domain.Entities.ProgrammingLanguage programmingLanguage = _mapper.Map<Domain.Entities.ProgrammingLanguage>(request);
+            Domain.Entities.ProgrammingLanguage createdProgrammingLanguage =
                 await _programmingLanguageRepository.AddAsync(programmingLanguage);
             CreatedProgrammingLanguageDto createdProgrammingLanguageDto =
                 _mapper.Map<CreatedProgrammingLanguageDto>(createdProgrammingLanguage);

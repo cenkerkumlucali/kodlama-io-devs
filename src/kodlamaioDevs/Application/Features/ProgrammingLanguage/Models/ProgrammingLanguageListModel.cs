@@ -1,7 +1,7 @@
-using Application.Features.programmingLanguage.Dtos;
+using Application.Features.ProgrammingLanguage.Dtos;
 using Core.Persistence.Paging;
 
-namespace Application.Features.programmingLanguage.Models;
+namespace Application.Features.ProgrammingLanguage.Models;
 
 public class ProgrammingLanguageListModel:BasePageableModel
 {

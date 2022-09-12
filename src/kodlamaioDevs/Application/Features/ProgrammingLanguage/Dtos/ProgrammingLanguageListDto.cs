@@ -1,4 +1,4 @@
-namespace Application.Features.programmingLanguage.Dtos;
+namespace Application.Features.ProgrammingLanguage.Dtos;
 
 public class ProgrammingLanguageListDto
 {

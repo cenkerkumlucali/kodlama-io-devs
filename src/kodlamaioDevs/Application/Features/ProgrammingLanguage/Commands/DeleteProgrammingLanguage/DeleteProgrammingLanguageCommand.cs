@@ -1,10 +1,9 @@
-using Application.Features.programmingLanguage.Dtos;
+using Application.Features.ProgrammingLanguage.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
-using Domain.Entities;
 using MediatR;
 
-namespace Application.Features.programmingLanguage.Commands.DeleteProgrammingLanguage;
+namespace Application.Features.ProgrammingLanguage.Commands.DeleteProgrammingLanguage;
 
 public class DeleteProgrammingLanguageCommand:IRequest<DeletedProgrammingLanguageDto>
 {
@@ -23,8 +22,8 @@ public class DeleteProgrammingLanguageCommand:IRequest<DeletedProgrammingLanguag
 
         public async Task<DeletedProgrammingLanguageDto> Handle(DeleteProgrammingLanguageCommand request, CancellationToken cancellationToken)
         {
-            ProgrammingLanguage programmingLanguage = _mapper.Map<ProgrammingLanguage>(request);
-            ProgrammingLanguage deletedProgrammingLanguage =
+            Domain.Entities.ProgrammingLanguage programmingLanguage = _mapper.Map<Domain.Entities.ProgrammingLanguage>(request);
+            Domain.Entities.ProgrammingLanguage deletedProgrammingLanguage =
                 await _programmingLanguageRepository.DeleteAsync(programmingLanguage);
             DeletedProgrammingLanguageDto deletedProgrammingLanguageDto =
                 _mapper.Map<DeletedProgrammingLanguageDto>(deletedProgrammingLanguage);

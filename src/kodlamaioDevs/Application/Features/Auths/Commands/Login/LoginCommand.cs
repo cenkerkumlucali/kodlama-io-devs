@@ -4,13 +4,10 @@ using Application.Services.Auth;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Security.Dtos;
-using Core.Security.Entities;
-using Core.Security.Enums;
-using Core.Security.Hashing;
 using Core.Security.JWT;
 using MediatR;
 
-namespace Application.Features.Auth.Commands;
+namespace Application.Features.Auths.Commands.Login;
 
 public class LoginCommand : IRequest<LoginedDto>
 {

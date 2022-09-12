@@ -1,10 +1,10 @@
-﻿using Application.Features.programmingLanguage.Commands.CreateProgrammingLanguage;
-using Application.Features.programmingLanguage.Commands.DeleteProgrammingLanguage;
-using Application.Features.programmingLanguage.Commands.UpdateProgrammingLanguage;
-using Application.Features.programmingLanguage.Dtos;
-using Application.Features.programmingLanguage.Models;
-using Application.Features.programmingLanguage.Queries.GetByIdProgrammingLanguage;
-using Application.Features.programmingLanguage.Queries.GetListProgrammingLanguage;
+﻿using Application.Features.ProgrammingLanguage.Commands.CreateProgrammingLanguage;
+using Application.Features.ProgrammingLanguage.Commands.DeleteProgrammingLanguage;
+using Application.Features.ProgrammingLanguage.Commands.UpdateProgrammingLanguage;
+using Application.Features.ProgrammingLanguage.Dtos;
+using Application.Features.ProgrammingLanguage.Models;
+using Application.Features.ProgrammingLanguage.Queries.GetByIdProgrammingLanguage;
+using Application.Features.ProgrammingLanguage.Queries.GetListProgrammingLanguage;
 using Core.Application.Requests;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;

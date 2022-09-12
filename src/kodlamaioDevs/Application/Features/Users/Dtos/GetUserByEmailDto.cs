@@ -1,4 +1,4 @@
-namespace Application.Features.Users.Queries;
+namespace Application.Features.Users.Dtos;
 
 public class GetUserByEmailDto
 {

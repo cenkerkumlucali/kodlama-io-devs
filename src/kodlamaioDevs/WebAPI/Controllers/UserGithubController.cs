@@ -8,7 +8,6 @@ using Application.Features.Technology.Commands.UpdateTechnology;
 using Application.Features.Technology.Dtos;
 using Application.Features.Technology.Models;
 using Application.Features.Technology.Queries.GetListTechnology;
-using Application.Features.UserGithub.Dtos;
 using Core.Application.Requests;
 using Microsoft.AspNetCore.Mvc;
 

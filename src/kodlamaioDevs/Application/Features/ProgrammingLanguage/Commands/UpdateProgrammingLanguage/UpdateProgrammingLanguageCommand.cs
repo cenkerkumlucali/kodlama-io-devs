@@ -1,10 +1,9 @@
-using Application.Features.programmingLanguage.Dtos;
+using Application.Features.ProgrammingLanguage.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
-using Domain.Entities;
 using MediatR;
 
-namespace Application.Features.programmingLanguage.Commands.UpdateProgrammingLanguage;
+namespace Application.Features.ProgrammingLanguage.Commands.UpdateProgrammingLanguage;
 
 public class UpdateProgrammingLanguageCommand:IRequest<UpdatedProgrammingLanguageDto>
 {
@@ -23,8 +22,8 @@ public class UpdateProgrammingLanguageCommand:IRequest<UpdatedProgrammingLanguag
 
         public async Task<UpdatedProgrammingLanguageDto> Handle(UpdateProgrammingLanguageCommand request, CancellationToken cancellationToken)
         {
-            ProgrammingLanguage programmingLanguage = _mapper.Map<ProgrammingLanguage>(request);
-            ProgrammingLanguage createdProgrammingLanguage =
+            Domain.Entities.ProgrammingLanguage programmingLanguage = _mapper.Map<Domain.Entities.ProgrammingLanguage>(request);
+            Domain.Entities.ProgrammingLanguage createdProgrammingLanguage =
                 await _programmingLanguageRepository.UpdateAsync(programmingLanguage);
             UpdatedProgrammingLanguageDto  updatedProgrammingLanguageDto =
                 _mapper.Map<UpdatedProgrammingLanguageDto>(createdProgrammingLanguage);

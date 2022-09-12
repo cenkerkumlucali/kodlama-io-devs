@@ -2,7 +2,6 @@
 using Application.Features.SocialPlatforms.Command.DeleteSocialPlatform;
 using Application.Features.SocialPlatforms.Command.UpdateSocialPlatform;
 using Application.Features.SocialPlatforms.Dtos;
-using Application.Features.UserGithub.Dtos;
 using AutoMapper;
 using Domain.Entities;
 

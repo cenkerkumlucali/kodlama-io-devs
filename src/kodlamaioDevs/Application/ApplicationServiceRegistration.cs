@@ -12,7 +12,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using Application.Features.Auths.Rules;
-using Application.Features.programmingLanguage.Rules;
+using Application.Features.ProgrammingLanguage.Rules;
 using Application.Services.Auth;
 
 namespace Application

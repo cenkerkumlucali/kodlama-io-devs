@@ -1,4 +1,4 @@
-namespace Application.Features.User;
+namespace Application.Features.Users.Dtos;
 
 public class CreatedUserDto
 {

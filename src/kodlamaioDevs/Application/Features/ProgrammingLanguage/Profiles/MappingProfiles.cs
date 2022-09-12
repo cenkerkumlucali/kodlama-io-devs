@@ -1,31 +1,30 @@
-﻿using Application.Features.programmingLanguage.Commands.CreateProgrammingLanguage;
-using Application.Features.programmingLanguage.Commands.DeleteProgrammingLanguage;
-using Application.Features.programmingLanguage.Commands.UpdateProgrammingLanguage;
-using Application.Features.programmingLanguage.Dtos;
-using Application.Features.programmingLanguage.Models;
+﻿using Application.Features.ProgrammingLanguage.Commands.CreateProgrammingLanguage;
+using Application.Features.ProgrammingLanguage.Commands.DeleteProgrammingLanguage;
+using Application.Features.ProgrammingLanguage.Commands.UpdateProgrammingLanguage;
+using Application.Features.ProgrammingLanguage.Dtos;
+using Application.Features.ProgrammingLanguage.Models;
 using AutoMapper;
 using Core.Persistence.Paging;
-using Domain.Entities;
 
-namespace Application.Features.programmingLanguage.Profiles
+namespace Application.Features.ProgrammingLanguage.Profiles
 {
     public class MappingProfiles : Profile
     {
         public MappingProfiles()
         {
-            CreateMap<ProgrammingLanguage, CreatedProgrammingLanguageDto>().ReverseMap();
-            CreateMap<ProgrammingLanguage, CreateProgrammingLanguageCommand>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage, CreatedProgrammingLanguageDto>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage, CreateProgrammingLanguageCommand>().ReverseMap();
             
-            CreateMap<ProgrammingLanguage, UpdatedProgrammingLanguageDto>().ReverseMap();
-            CreateMap<ProgrammingLanguage, UpdateProgrammingLanguageCommand>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage, UpdatedProgrammingLanguageDto>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage, UpdateProgrammingLanguageCommand>().ReverseMap();
             
-            CreateMap<ProgrammingLanguage, DeletedProgrammingLanguageDto>().ReverseMap();
-            CreateMap<ProgrammingLanguage, DeleteProgrammingLanguageCommand>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage, DeletedProgrammingLanguageDto>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage, DeleteProgrammingLanguageCommand>().ReverseMap();
             
-            CreateMap<IPaginate<ProgrammingLanguage>,ProgrammingLanguageListModel>().ReverseMap();
-            CreateMap<ProgrammingLanguage,ProgrammingLanguageListDto>().ReverseMap();
+            CreateMap<IPaginate<Domain.Entities.ProgrammingLanguage>,ProgrammingLanguageListModel>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage,ProgrammingLanguageListDto>().ReverseMap();
 
-            CreateMap<ProgrammingLanguage, GetByIdProgrammingLanguageDto>().ReverseMap();
+            CreateMap<Domain.Entities.ProgrammingLanguage, GetByIdProgrammingLanguageDto>().ReverseMap();
         }
     }
 }

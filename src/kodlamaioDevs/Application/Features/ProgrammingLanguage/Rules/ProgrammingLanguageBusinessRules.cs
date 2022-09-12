@@ -1,9 +1,8 @@
 using Application.Services.Repositories;
 using Core.CrossCuttingConcerns.Exceptions;
 using Core.Persistence.Paging;
-using Domain.Entities;
 
-namespace Application.Features.programmingLanguage.Rules;
+namespace Application.Features.ProgrammingLanguage.Rules;
 
 public class ProgrammingLanguageBusinessRules
 {
@@ -15,10 +14,10 @@ public class ProgrammingLanguageBusinessRules
     }
     public async Task LanguageNameCanNotBeDuplicatedWhenInserted(string name)
     {
-        IPaginate<ProgrammingLanguage> result = await _programmingLanguageRepository.GetListAsync(b => b.Name == name);
+        IPaginate<Domain.Entities.ProgrammingLanguage> result = await _programmingLanguageRepository.GetListAsync(b => b.Name == name);
         if (result.Items.Any()) throw new BusinessException("Programming language name exists.");
     }
-    public async Task LanguageShouldExistWhenRequested(ProgrammingLanguage programmingLanguage)
+    public async Task LanguageShouldExistWhenRequested(Domain.Entities.ProgrammingLanguage programmingLanguage)
     {
         if (programmingLanguage == null) throw new BusinessException("Requested brand does not exist.");
     }

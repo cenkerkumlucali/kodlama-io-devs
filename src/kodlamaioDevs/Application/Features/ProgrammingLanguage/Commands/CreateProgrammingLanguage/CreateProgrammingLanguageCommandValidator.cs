@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace Application.Features.programmingLanguage.Commands.CreateProgrammingLanguage;
+namespace Application.Features.ProgrammingLanguage.Commands.CreateProgrammingLanguage;
 
 public class CreateProgrammingLanguageCommandValidator:AbstractValidator<CreateProgrammingLanguageCommand>
 {
