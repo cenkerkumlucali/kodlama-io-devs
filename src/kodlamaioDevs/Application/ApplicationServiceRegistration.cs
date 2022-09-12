@@ -11,7 +11,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Application.Features.Auths.Rules;
 using Application.Features.programmingLanguage.Rules;
+using Application.Services.Auth;
 
 namespace Application
 {
@@ -24,6 +26,8 @@ namespace Application
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             services.AddScoped<ProgrammingLanguageBusinessRules>();
+            services.AddScoped<AuthBusinessRules>();
+            services.AddScoped<IAuthService, AuthManager>();
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(AuthorizationBehavior<,>));

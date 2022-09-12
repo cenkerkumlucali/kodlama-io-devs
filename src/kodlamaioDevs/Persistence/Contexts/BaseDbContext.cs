@@ -16,7 +16,7 @@ namespace Persistence.Contexts
         public DbSet<ProgrammingLanguage> ProgrammingLanguages { get; set; }
         public DbSet<Technology> Technologies { get; set; } 
         public DbSet<User> Users { get; set; } 
-        public DbSet<UserGithub> UserGithubs { get; set; } 
+        public DbSet<SocialPlatform> SocialPlatforms { get; set; } 
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; } 
         public DbSet<OperationClaim> OperationClaims { get; set; } 
 
@@ -76,13 +76,13 @@ namespace Persistence.Contexts
                 a.Property(p => p.UserId).HasColumnName("UserId");
                 a.Property(p => p.OperationClaimId).HasColumnName("OperationClaimdId");
                 a.HasOne(p => p.User);
-                a.HasMany(p => p.OperationClaim);
+                a.HasOne(p => p.OperationClaim);
 
             });
 
-            modelBuilder.Entity<UserGithub>(a =>
+            modelBuilder.Entity<SocialPlatform>(a =>
             {
-                a.ToTable("UserGithubs").HasKey(k => k.Id);
+                a.ToTable("SocialPlatforms").HasKey(k => k.Id);
                 a.Property(p => p.Id).HasColumnName("Id");
                 a.Property(p => p.UserId).HasColumnName("UserId");
                 a.Property(p => p.Name).HasColumnName("Name");

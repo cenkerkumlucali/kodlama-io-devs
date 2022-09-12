@@ -7,10 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Folder Include="Features\Auths\Constanst" />
         <Folder Include="Features\Auths\Models" />
         <Folder Include="Features\Auths\Queries" />
-        <Folder Include="Features\Auths\Rules" />
         <Folder Include="Features\OperationClaims\Commands\DeleteOperationClaim" />
         <Folder Include="Features\OperationClaims\Commands\UpdateUserOperationClaim" />
         <Folder Include="Features\OperationClaims\Constanst" />
@@ -19,10 +17,10 @@
         <Folder Include="Features\ProgrammingLanguage\Constants" />
         <Folder Include="Features\Technology\Constants" />
         <Folder Include="Features\Technology\Rules" />
-        <Folder Include="Features\UserGithub\Constants" />
-        <Folder Include="Features\UserGithub\Models" />
-        <Folder Include="Features\UserGithub\Queries" />
-        <Folder Include="Features\UserGithub\Rules" />
+        <Folder Include="Features\SocialPlatforms\Constants" />
+        <Folder Include="Features\SocialPlatforms\Models" />
+        <Folder Include="Features\SocialPlatforms\Queries" />
+        <Folder Include="Features\SocialPlatforms\Rules" />
         <Folder Include="Features\UserOperationClaims\Commands\DeleteUserOperationClaim" />
         <Folder Include="Features\UserOperationClaims\Commands\UpdateUserOperationClaim" />
         <Folder Include="Features\UserOperationClaims\Constanst" />

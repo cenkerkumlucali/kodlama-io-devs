@@ -5,7 +5,7 @@ using Persistence.Contexts;
 
 namespace Persistence.Repositories;
 
-public class UserGithubRepository:EfRepositoryBase<UserGithub,BaseDbContext>,IUserGithubRepository
+public class UserGithubRepository:EfRepositoryBase<SocialPlatform,BaseDbContext>,ISocialPlatformRepository
 
 {
     public UserGithubRepository(BaseDbContext context) : base(context)

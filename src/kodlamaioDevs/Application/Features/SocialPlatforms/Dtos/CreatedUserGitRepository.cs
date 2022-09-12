@@ -1,6 +1,6 @@
-namespace Application.Features.UserGithub.Dtos;
+namespace Application.Features.SocialPlatforms.Dtos;
 
-public class UpdatedUserGithubDto
+public class CreatedSocialPlatformDto
 {
     public int Id { get; set; }
     public int UserId { get; set; }

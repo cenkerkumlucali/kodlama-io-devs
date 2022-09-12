@@ -3,19 +3,19 @@ using Core.Security.Entities;
 
 namespace Domain.Entities;
 
-public class UserGithub:Entity
+public class SocialPlatform:Entity
 {
     public int UserId { get; set; }
     public string Name { get; set; }
     
     public virtual User? User { get; set; }
 
-    public UserGithub()
+    public SocialPlatform()
     {
         
     }
 
-    public UserGithub(int id, int userId, string name) : this()
+    public SocialPlatform(int id, int userId, string name) : this()
     {
         Id = id;
         UserId = userId;

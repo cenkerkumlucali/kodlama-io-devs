@@ -1,6 +1,6 @@
 namespace Application.Features.UserGithub.Dtos;
 
-public class DeletedUserGithubDto
+public class DeletedSocialPlatformDto
 {
     public int Id { get; set; }
 }
