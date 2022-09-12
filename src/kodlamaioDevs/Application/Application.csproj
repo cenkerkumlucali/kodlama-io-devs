@@ -18,8 +18,6 @@
         <Folder Include="Features\Technology\Constants" />
         <Folder Include="Features\Technology\Rules" />
         <Folder Include="Features\SocialPlatforms\Constants" />
-        <Folder Include="Features\SocialPlatforms\Models" />
-        <Folder Include="Features\SocialPlatforms\Queries" />
         <Folder Include="Features\SocialPlatforms\Rules" />
         <Folder Include="Features\UserOperationClaims\Commands\DeleteUserOperationClaim" />
         <Folder Include="Features\UserOperationClaims\Commands\UpdateUserOperationClaim" />
@@ -27,8 +25,6 @@
         <Folder Include="Features\UserOperationClaims\Rules" />
         <Folder Include="Features\Users\Commands" />
         <Folder Include="Features\Users\Constanst" />
-        <Folder Include="Features\Users\Models" />
-        <Folder Include="Features\Users\Profiles" />
         <Folder Include="Features\Users\Rules" />
     </ItemGroup>
 

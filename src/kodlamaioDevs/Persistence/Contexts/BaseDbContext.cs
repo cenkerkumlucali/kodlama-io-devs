@@ -85,7 +85,7 @@ namespace Persistence.Contexts
                 a.ToTable("SocialPlatforms").HasKey(k => k.Id);
                 a.Property(p => p.Id).HasColumnName("Id");
                 a.Property(p => p.UserId).HasColumnName("UserId");
-                a.Property(p => p.Name).HasColumnName("Name");
+                a.Property(p => p.Text).HasColumnName("Name");
                 a.HasOne(p => p.User);
             });
             ProgrammingLanguage[] programmingLanguageSeeds =

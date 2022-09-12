@@ -6,7 +6,7 @@ namespace Domain.Entities;
 public class SocialPlatform:Entity
 {
     public int UserId { get; set; }
-    public string Name { get; set; }
+    public string Text { get; set; }
     
     public virtual User? User { get; set; }
 
@@ -19,6 +19,6 @@ public class SocialPlatform:Entity
     {
         Id = id;
         UserId = userId;
-        Name = name;
+        Text = name;
     }
 }

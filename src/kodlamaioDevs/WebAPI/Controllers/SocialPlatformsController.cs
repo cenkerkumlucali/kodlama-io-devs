@@ -2,6 +2,8 @@
 using Application.Features.SocialPlatforms.Command.DeleteSocialPlatform;
 using Application.Features.SocialPlatforms.Command.UpdateSocialPlatform;
 using Application.Features.SocialPlatforms.Dtos;
+using Application.Features.SocialPlatforms.Models;
+using Application.Features.SocialPlatforms.Queries.GetByIdSocialPlatform;
 using Application.Features.Technology.Commands.CreateTechnology;
 using Application.Features.Technology.Commands.DeleteTechnology;
 using Application.Features.Technology.Commands.UpdateTechnology;
@@ -40,6 +42,13 @@ namespace WebAPI.Controllers
             DeletedSocialPlatformDto result = await Mediator.Send(deleteUserGithubCommand);
             return Created("", result);
         }
-    
+        
+        [HttpGet]
+        public async Task<IActionResult> GetList(
+            [FromQuery] GetListSocialPlatformQuery getByIdSocialPlatformQuery)
+        {
+            SocialPlatformModel result = await Mediator.Send(getByIdSocialPlatformQuery);
+            return Ok(result);
+        }
     }
 }

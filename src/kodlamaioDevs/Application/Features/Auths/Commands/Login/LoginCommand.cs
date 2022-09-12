@@ -11,7 +11,7 @@ namespace Application.Features.Auths.Commands.Login;
 
 public class LoginCommand : IRequest<LoginedDto>
 {
-    public UserForLoginDto UserForLoginDto { get; set; }
+    private UserForLoginDto UserForLoginDto { get; set; }
 
     public class LoginCommandHandler : IRequestHandler<LoginCommand, LoginedDto>
     {
