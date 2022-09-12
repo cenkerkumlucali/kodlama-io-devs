@@ -35,7 +35,6 @@ public class LoginCommand : IRequest<LoginedDto>
                 await _userRepository.GetAsync(user => user.Email == request.UserForLoginDto.Email);
             
             await _authBusinessRules.UserShouldBeExists(user);
-            await _authBusinessRules.UserEmailShouldBeNotExists(user.Email);
             await _authBusinessRules.UserPasswordShouldBeMatch(user.Id, request.UserForLoginDto.Password);
             LoginedDto loginDto = _mapper.Map<LoginedDto>(user);
             AccessToken createdAccessToken = await _authService.CreateAccessToken(user);

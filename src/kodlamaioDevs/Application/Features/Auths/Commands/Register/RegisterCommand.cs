@@ -1,4 +1,5 @@
 using Application.Features.Auths.Dtos;
+using Application.Features.Auths.Rules;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Security.Dtos;
@@ -16,16 +17,20 @@ public class RegisterCommand : IRequest<RegisteredDto>
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
+        private readonly AuthBusinessRules _authBusinessRules;
 
 
-        public RegisterCommandHandler(IUserRepository userRepository, IMapper mapper)
+        public RegisterCommandHandler(IUserRepository userRepository, IMapper mapper, AuthBusinessRules authBusinessRules)
         {
             _userRepository = userRepository;
             _mapper = mapper;
+            _authBusinessRules = authBusinessRules;
         }
 
         public async Task<RegisteredDto> Handle(RegisterCommand request, CancellationToken cancellationToken)
         {
+            await _authBusinessRules.UserEmailShouldBeNotExists(request.UserForRegisterDto.Email);
+
             byte[] passwordHash, passwordSalt;
             HashingHelper.CreatePasswordHash(request.UserForRegisterDto.Password, out passwordHash, out passwordSalt);
             Core.Security.Entities.User user = new Core.Security.Entities.User()
