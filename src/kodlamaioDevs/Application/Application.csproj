@@ -14,7 +14,6 @@
         <Folder Include="Features\OperationClaims\Constanst" />
         <Folder Include="Features\OperationClaims\Queries" />
         <Folder Include="Features\OperationClaims\Rules" />
-        <Folder Include="Features\ProgrammingLanguage\Constants" />
         <Folder Include="Features\Technology\Constants" />
         <Folder Include="Features\Technology\Rules" />
         <Folder Include="Features\SocialPlatforms\Constants" />
