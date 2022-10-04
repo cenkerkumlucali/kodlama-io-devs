@@ -13,11 +13,8 @@ public class MappingProfiles : Profile
 {
     public MappingProfiles()
     {
-        //Register
-        CreateMap<Core.Security.Entities.User, RegisteredDto>().ReverseMap(); 
-        CreateMap<AccessToken, RegisteredDto>().ReverseMap();
-
+        
         //Login
-        CreateMap<Core.Security.Entities.User, LoginedDto>().ReverseMap();
+        CreateMap<User, LoggedDto>().ReverseMap();
     }
 }
