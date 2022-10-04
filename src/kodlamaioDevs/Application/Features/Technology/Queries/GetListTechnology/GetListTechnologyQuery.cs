@@ -1,10 +1,8 @@
-using Application.Features.Technology.Dtos;
 using Application.Features.Technology.Models;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Application.Requests;
 using Core.Persistence.Paging;
-using Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 

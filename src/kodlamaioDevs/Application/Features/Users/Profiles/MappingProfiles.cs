@@ -1,9 +1,4 @@
-﻿using Application.Features.ProgrammingLanguage.Commands.CreateProgrammingLanguage;
-using Application.Features.ProgrammingLanguage.Commands.DeleteProgrammingLanguage;
-using Application.Features.ProgrammingLanguage.Commands.UpdateProgrammingLanguage;
-using Application.Features.ProgrammingLanguage.Dtos;
-using Application.Features.ProgrammingLanguage.Models;
-using Application.Features.Users.Dtos;
+﻿using Application.Features.Users.Dtos;
 using Application.Features.Users.Models;
 using AutoMapper;
 using Core.Persistence.Paging;

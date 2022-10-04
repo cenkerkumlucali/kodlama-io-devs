@@ -1,5 +1,4 @@
 using Core.Security.Enums;
-using Core.Security.JWT;
 
 namespace Application.Features.Auths.Dtos;
 

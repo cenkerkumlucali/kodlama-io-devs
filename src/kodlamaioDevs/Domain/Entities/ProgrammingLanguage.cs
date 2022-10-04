@@ -1,5 +1,4 @@
 using Core.Persistence.Repositories;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Domain.Entities;
 

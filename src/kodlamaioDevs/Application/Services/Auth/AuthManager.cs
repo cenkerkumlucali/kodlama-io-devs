@@ -3,7 +3,6 @@ using Core.Persistence.Paging;
 using Core.Security.Entities;
 using Core.Security.JWT;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
 
 namespace Application.Services.Auth;
 

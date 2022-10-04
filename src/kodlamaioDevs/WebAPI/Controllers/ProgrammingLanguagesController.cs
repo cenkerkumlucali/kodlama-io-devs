@@ -6,7 +6,6 @@ using Application.Features.ProgrammingLanguage.Models;
 using Application.Features.ProgrammingLanguage.Queries.GetByIdProgrammingLanguage;
 using Application.Features.ProgrammingLanguage.Queries.GetListProgrammingLanguage;
 using Core.Application.Requests;
-using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers

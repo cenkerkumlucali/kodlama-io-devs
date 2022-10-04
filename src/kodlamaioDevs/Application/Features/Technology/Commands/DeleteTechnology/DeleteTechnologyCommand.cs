@@ -1,7 +1,6 @@
 using Application.Features.Technology.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
-using Domain.Entities;
 using MediatR;
 
 namespace Application.Features.Technology.Commands.DeleteTechnology;

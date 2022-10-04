@@ -4,13 +4,6 @@ using Application.Features.SocialPlatforms.Command.UpdateSocialPlatform;
 using Application.Features.SocialPlatforms.Dtos;
 using Application.Features.SocialPlatforms.Models;
 using Application.Features.SocialPlatforms.Queries.GetByIdSocialPlatform;
-using Application.Features.Technology.Commands.CreateTechnology;
-using Application.Features.Technology.Commands.DeleteTechnology;
-using Application.Features.Technology.Commands.UpdateTechnology;
-using Application.Features.Technology.Dtos;
-using Application.Features.Technology.Models;
-using Application.Features.Technology.Queries.GetListTechnology;
-using Core.Application.Requests;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers

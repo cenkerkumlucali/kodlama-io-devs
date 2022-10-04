@@ -1,5 +1,3 @@
-using Domain.Entities;
-
 namespace Application.Features.SocialPlatforms.Dtos;
 
 public class GetListSocialPlatformDto

@@ -1,7 +1,3 @@
-using Application.Features.ProgrammingLanguage.Dtos;
-using Application.Features.ProgrammingLanguage.Queries.GetByIdProgrammingLanguage;
-using Application.Features.ProgrammingLanguage.Rules;
-using Application.Features.SocialPlatforms.Dtos;
 using Application.Features.SocialPlatforms.Models;
 using Application.Services.Repositories;
 using AutoMapper;

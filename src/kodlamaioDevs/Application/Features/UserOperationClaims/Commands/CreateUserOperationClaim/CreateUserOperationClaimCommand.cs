@@ -1,5 +1,3 @@
-using Application.Features.Technology.Commands.CreateTechnology;
-using Application.Features.Technology.Dtos;
 using Application.Features.UserOperationClaims.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;

@@ -1,6 +1,4 @@
 using Application.Features.OperationClaims.Dtos;
-using Application.Features.UserOperationClaims.Commands.CreateUserOperationClaim;
-using Application.Features.UserOperationClaims.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
 using Core.Security.Entities;

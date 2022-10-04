@@ -1,4 +1,3 @@
-using Core.Security.Entities;
 using Core.Security.Enums;
 
 namespace Application.Features.Users.Dtos;

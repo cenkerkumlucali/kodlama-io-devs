@@ -4,7 +4,6 @@ using AutoMapper;
 using Core.Application.Requests;
 using Core.Persistence.Paging;
 using Core.Security.Entities;
-using Core.Security.Enums;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 

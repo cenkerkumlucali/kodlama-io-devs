@@ -5,11 +5,9 @@ using Core.Security.Encryption;
 using Core.Security.JWT;
 using Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Persistence;
-using Persistence.Contexts;
 
 var builder = WebApplication.CreateBuilder(args);
 
