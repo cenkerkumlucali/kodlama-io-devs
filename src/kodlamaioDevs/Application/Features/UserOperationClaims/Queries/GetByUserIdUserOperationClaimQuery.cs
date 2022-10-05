@@ -26,7 +26,6 @@ public class GetByUserIdUserOperationClaimQuery:IRequest<GetByUserIdUserOperatio
                 include:m => 
                     m.Include(c => c.User)
                 .Include(c => c.OperationClaim));
-           var result = userOperationClaims.Items.Where(c => c.UserId == request.UserId);
 
            GetByUserIdUserOperationClaimDto getByUserIdUserOperationClaimDto = new()
            {
