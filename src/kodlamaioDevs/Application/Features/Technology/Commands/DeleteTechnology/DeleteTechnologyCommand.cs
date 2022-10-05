@@ -1,13 +1,16 @@
 using Application.Features.Technology.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using MediatR;
+using static Application.Features.Technology.Constants.Claims;
 
 namespace Application.Features.Technology.Commands.DeleteTechnology;
 
-public class DeleteTechnologyCommand:IRequest<DeletedTechnologyDto>
+public class DeleteTechnologyCommand:IRequest<DeletedTechnologyDto>,ISecuredRequest
 {
     public int Id { get; set; }
+    public string[] Roles => new[] { Admin };
     
     public class DeleteTechnologyCommandHandler:IRequestHandler<DeleteTechnologyCommand,DeletedTechnologyDto>
     {

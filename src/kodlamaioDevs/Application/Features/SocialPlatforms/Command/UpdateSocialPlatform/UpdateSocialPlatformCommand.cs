@@ -1,17 +1,19 @@
 using Application.Features.SocialPlatforms.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using Domain.Entities;
 using MediatR;
+using static Application.Features.SocialPlatforms.Constants.Claims;
 
 namespace Application.Features.SocialPlatforms.Command.UpdateSocialPlatform;
 
-public class UpdateSocialPlatformCommand:IRequest<UpdatedSocialPlatformDto>
+public class UpdateSocialPlatformCommand:IRequest<UpdatedSocialPlatformDto>,ISecuredRequest
 {
     public int Id { get; set; }
     public int LanguageId { get; set; }
     public string Name { get; set; }
-    
+    public string[] Roles => new[] { Admin, User };
     public class UpdateSocialPlatformCommandHandler:IRequestHandler<UpdateSocialPlatformCommand,UpdatedSocialPlatformDto>
     {
         private ISocialPlatformRepository _userGithubRepository;

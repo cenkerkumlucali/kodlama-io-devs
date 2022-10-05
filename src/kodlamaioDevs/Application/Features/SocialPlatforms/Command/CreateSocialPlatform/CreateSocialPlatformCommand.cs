@@ -1,15 +1,18 @@
 using Application.Features.SocialPlatforms.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using Domain.Entities;
 using MediatR;
+using static Application.Features.SocialPlatforms.Constants.Claims;
 
 namespace Application.Features.SocialPlatforms.Command.CreateSocialPlatform;
 
-public class CreateSocialPlatformCommand: IRequest<CreatedSocialPlatformDto>
+public class CreateSocialPlatformCommand: IRequest<CreatedSocialPlatformDto>,ISecuredRequest
 {
     public int UserId { get; set; }
     public string Name { get; set; }
+    public string[] Roles => new[] { Admin, User };
 
     public class CreateSocialPlatformCommandHandler : IRequestHandler<CreateSocialPlatformCommand,
         CreatedSocialPlatformDto>

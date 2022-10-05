@@ -1,14 +1,17 @@
 using Application.Features.ProgrammingLanguage.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using MediatR;
+using static Application.Features.ProgrammingLanguage.Constants.Claims;
+
 
 namespace Application.Features.ProgrammingLanguage.Commands.DeleteProgrammingLanguage;
 
-public class DeleteProgrammingLanguageCommand:IRequest<DeletedProgrammingLanguageDto>
+public class DeleteProgrammingLanguageCommand:IRequest<DeletedProgrammingLanguageDto>,ISecuredRequest
 {
     public int Id { get; set; }
-    
+    public string[] Roles => new[] { Admin, User };
     public class DeleteProgrammingLanguageCommandHandler:IRequestHandler<DeleteProgrammingLanguageCommand,DeletedProgrammingLanguageDto>
     {
         private IProgrammingLanguageRepository _programmingLanguageRepository;

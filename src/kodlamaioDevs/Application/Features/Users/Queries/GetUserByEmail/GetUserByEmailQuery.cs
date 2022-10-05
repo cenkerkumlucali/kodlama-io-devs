@@ -2,7 +2,7 @@ using Application.Services.Repositories;
 using AutoMapper;
 using MediatR;
 
-namespace Application.Features.Users.Queries;
+namespace Application.Features.Users.Queries.GetUserByEmail;
 
 public class GetUserByEmailQuery:IRequest<Core.Security.Entities.User>
 {

@@ -1,19 +1,23 @@
 using Application.Features.UserOperationClaims.Models;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using Core.Persistence.Paging;
 using Core.Security.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
+using static Application.Features.UserOperationClaims.Constants.Claims;
+
 
 namespace Application.Features.UserOperationClaims.Queries;
 
-public class GetUserOperationClaimByUserQuery : IRequest<UserOperationClaimListModel>
+public class ListUserOperationClaimQuery : IRequest<UserOperationClaimListModel>,ISecuredRequest
 {
     public int UserId { get; set; }
+    public string[] Roles => new[] { Admin };
 
     public class
-        GetUserOperationClaimByUserQueryHandler : IRequestHandler<GetUserOperationClaimByUserQuery,
+        GetUserOperationClaimByUserQueryHandler : IRequestHandler<ListUserOperationClaimQuery,
             UserOperationClaimListModel>
     {
         IUserOperationClaimRepository _userOperationClaimRepository;
@@ -26,7 +30,7 @@ public class GetUserOperationClaimByUserQuery : IRequest<UserOperationClaimListM
             _mapper = mapper;
         }
 
-        public async Task<UserOperationClaimListModel> Handle(GetUserOperationClaimByUserQuery request,
+        public async Task<UserOperationClaimListModel> Handle(ListUserOperationClaimQuery request,
             CancellationToken cancellationToken)
         {
             IPaginate<UserOperationClaim> userOperationClaims = await _userOperationClaimRepository.GetListAsync(

@@ -1,15 +1,18 @@
 using Application.Features.Technology.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using MediatR;
+using static Application.Features.Technology.Constants.Claims;
+
 
 namespace Application.Features.Technology.Commands.CreateTechnology;
 
-public class CreateTechnologyCommand : IRequest<CreatedTechnologyDto>
+public class CreateTechnologyCommand : IRequest<CreatedTechnologyDto>,ISecuredRequest
 {
     public int LanguageId { get; set; }
     public string Name { get; set; }
-
+    public string[] Roles => new[] { Admin };
     public class CreateTechnologyCommandHandler : IRequestHandler<CreateTechnologyCommand,
         CreatedTechnologyDto>
     {

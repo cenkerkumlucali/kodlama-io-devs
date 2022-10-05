@@ -1,14 +1,19 @@
 using Application.Features.ProgrammingLanguage.Dtos;
 using Application.Services.Repositories;
 using AutoMapper;
+using Core.Application.Pipelines.Authorization;
 using MediatR;
+using static Application.Features.ProgrammingLanguage.Constants.Claims;
+
 
 namespace Application.Features.ProgrammingLanguage.Commands.UpdateProgrammingLanguage;
 
-public class UpdateProgrammingLanguageCommand:IRequest<UpdatedProgrammingLanguageDto>
+public class UpdateProgrammingLanguageCommand:IRequest<UpdatedProgrammingLanguageDto>,ISecuredRequest
 {
     public int Id { get; set; }
     public string Name { get; set; }
+    public string[] Roles => new[] { Admin, User };
+
     public class UpdateProgrammingLanguageCommandHandler:IRequestHandler<UpdateProgrammingLanguageCommand,UpdatedProgrammingLanguageDto>
     {
         private IProgrammingLanguageRepository _programmingLanguageRepository;
