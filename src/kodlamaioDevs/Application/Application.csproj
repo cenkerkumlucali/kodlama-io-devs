@@ -9,18 +9,9 @@
     <ItemGroup>
         <Folder Include="Features\Auths\Models" />
         <Folder Include="Features\Auths\Queries" />
-        <Folder Include="Features\OperationClaims\Commands\DeleteOperationClaim" />
-        <Folder Include="Features\OperationClaims\Commands\UpdateUserOperationClaim" />
-        <Folder Include="Features\OperationClaims\Constanst" />
-        <Folder Include="Features\OperationClaims\Queries" />
         <Folder Include="Features\OperationClaims\Rules" />
-        <Folder Include="Features\Technology\Constants" />
         <Folder Include="Features\Technology\Rules" />
-        <Folder Include="Features\SocialPlatforms\Constants" />
         <Folder Include="Features\SocialPlatforms\Rules" />
-        <Folder Include="Features\UserOperationClaims\Commands\DeleteUserOperationClaim" />
-        <Folder Include="Features\UserOperationClaims\Commands\UpdateUserOperationClaim" />
-        <Folder Include="Features\UserOperationClaims\Constanst" />
         <Folder Include="Features\UserOperationClaims\Rules" />
         <Folder Include="Features\Users\Commands" />
         <Folder Include="Features\Users\Constanst" />
