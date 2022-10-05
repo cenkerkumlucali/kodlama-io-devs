@@ -1,4 +1,6 @@
 ﻿using Application.Features.OperationClaims.Commands.CreateOperationClaim;
+using Application.Features.OperationClaims.Commands.DeleteOperationClaim;
+using Application.Features.OperationClaims.Commands.UpdateUserOperationClaim;
 using Application.Features.OperationClaims.Dtos;
 using Application.Features.OperationClaims.Models;
 using AutoMapper;
@@ -13,12 +15,13 @@ public class MappingProfiles : Profile
     {
         CreateMap<OperationClaim, CreatedOperationClaimDto>().ReverseMap();
         CreateMap<OperationClaim, CreateOperationClaimCommand>().ReverseMap();
+        
+        CreateMap<OperationClaim, DeletedOperationClaimDto>().ReverseMap();
+        CreateMap<OperationClaim, DeleteOperationClaimCommand>().ReverseMap();
+        
+        CreateMap<OperationClaim, UpdatedOperationClaimDto>().ReverseMap();
+        CreateMap<OperationClaim, UpdateOperationClaimCommand>().ReverseMap();
 
-        // CreateMap<OperationClaim, UpdatedOperationClaimDto>().ReverseMap();
-        // CreateMap<OperationClaim, UpdateOperationClaimCommand>().ReverseMap();
-        //
-        // CreateMap<OperationClaim, DeletedOperationClaimDto>().ReverseMap();
-        // CreateMap<OperationClaim, DeleteOperationClaimCommand>().ReverseMap();
         CreateMap<OperationClaim, OperationClaimListDto>().ReverseMap();
         CreateMap<IPaginate<OperationClaim>, OperationClaimListModel>().ReverseMap();
     }
